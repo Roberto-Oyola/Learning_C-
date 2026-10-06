@@ -7,33 +7,54 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
 
-    /*int age = 25;
-    float money = 67.67f;
+	#pragma region Declaraciones
+	/*int age = 25;
+	float money = 67.67f;
 	double distance = 123.456789;
 	bool active = true;
-	std::string name = "Roberto Oyola";
+	std::string name = "Roberto Oyola";*/
+	#pragma endregion
 
-    std::cout << name << " " << age << "\n";
-    std::cout << name << " " << age;
-    std::cout << age << "\n";*/
+	#pragma region Concatenar
+	/*std::cout << name << " " << age << "\n";
+	std::cout << name << " " << age;
+	std::cout << age << "\n";*/
+	#pragma endregion
 
-	Game game("The Legend of Zelda: Breath of the Wild", 2017);
+	#pragma region Clase y constructor
+	/*Game juego;
+	juego.name = "The Legend of Zelda: Breath of the Wild";
+	juego.year = 2017;
+	juego.showInfo();*/
 
-	std::vector<Game> games;
+	//Game game("The Legend of Zelda: Breath of the Wild", 2017);
+	#pragma endregion
 
+	#pragma region Listas y foreach
+	/*std::vector<Game> games;
 	games.push_back(game);
 
-	for (Game & game : games)
+	for (Game& game : games)
+	{
+		game.showInfo();
+	}*/
+	#pragma endregion
+
+	Game juego1("The Legend of Zelda: Breath of the Wild", 2017, "Nintendo Switch");
+	Game juego2("Super Mario Odyssey", 2017, "Nintendo Switch");
+
+	std::vector<Game> games;
+	games.push_back(juego1);
+	games.push_back(juego2);
+
+	std::cout << "=== Game Database ===\n\n";
+
+	for (Game& game : games)
 	{
 		game.showInfo();
 	}
-
-	/*game.name = "The Legend of Zelda: Breath of the Wild";
-	game.year = 2017;*/
-
-	game.showInfo();
 
     return 0;
 }
