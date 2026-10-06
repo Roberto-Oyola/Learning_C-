@@ -1,0 +1,11 @@
+#include <string>
+
+
+class Game
+{
+	public:
+		std::string name;
+		int year;
+
+		void showInfo();
+};

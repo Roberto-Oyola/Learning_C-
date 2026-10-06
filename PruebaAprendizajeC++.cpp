@@ -2,19 +2,28 @@
 //
 
 #include <iostream>
+#include "Game.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
 
-    int age = 25;
+    /*int age = 25;
     float money = 67.67f;
 	double distance = 123.456789;
 	bool active = true;
 	std::string name = "Roberto Oyola";
 
+    std::cout << name << " " << age << "\n";
     std::cout << name << " " << age;
-    //std::cout << age << "\n";
+    std::cout << age << "\n";*/
+
+	Game game;
+
+	game.name = "The Legend of Zelda: Breath of the Wild";
+	game.year = 2017;
+
+	game.showInfo();
 
     return 0;
 }
