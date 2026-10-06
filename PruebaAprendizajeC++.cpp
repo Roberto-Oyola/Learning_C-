@@ -42,7 +42,8 @@ int main()
 	}*/
 	#pragma endregion
 
-	Game juego1("The Legend of Zelda: Breath of the Wild", 2017, "Nintendo Switch");
+	#pragma region Puesta en practica
+	/*Game juego1("The Legend of Zelda: Breath of the Wild", 2017, "Nintendo Switch");
 	Game juego2("Super Mario Odyssey", 2017, "Nintendo Switch");
 
 	std::vector<Game> games;
@@ -54,7 +55,20 @@ int main()
 	for (Game& game : games)
 	{
 		game.showInfo();
-	}
+	}*/
+	#pragma endregion
+
+	int number = 25;
+
+	std::cout << "el numero es " << number << " y la direccion es " << &number << "\n";
+
+	int* pointer = &number;
+
+	std::cout << "el pointer apunta a: " << pointer << "\n";
+
+	*pointer = 50;
+
+	std::cout << "el numero ahora es " << number << " modificado desde el pointer\n";
 
     return 0;
 }
