@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Game.h"
+#include <vector>
 
 int main()
 {
@@ -19,6 +20,15 @@ int main()
     std::cout << age << "\n";*/
 
 	Game game("The Legend of Zelda: Breath of the Wild", 2017);
+
+	std::vector<Game> games;
+
+	games.push_back(game);
+
+	for (Game & game : games)
+	{
+		game.showInfo();
+	}
 
 	/*game.name = "The Legend of Zelda: Breath of the Wild";
 	game.year = 2017;*/

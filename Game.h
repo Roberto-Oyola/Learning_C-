@@ -8,5 +8,5 @@ class Game
 		int year;
 
 		Game(std::string name, int year);
-		void showInfo();
+		void showInfo() const;
 };

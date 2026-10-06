@@ -6,7 +6,7 @@ Game::Game(std::string name, int year)
 {
 }
 
-void Game::showInfo()
+void Game::showInfo() const
 {
 	std::cout << name << " " << year << "\n";
 }
