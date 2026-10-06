@@ -18,10 +18,10 @@ int main()
     std::cout << name << " " << age;
     std::cout << age << "\n";*/
 
-	Game game;
+	Game game("The Legend of Zelda: Breath of the Wild", 2017);
 
-	game.name = "The Legend of Zelda: Breath of the Wild";
-	game.year = 2017;
+	/*game.name = "The Legend of Zelda: Breath of the Wild";
+	game.year = 2017;*/
 
 	game.showInfo();
 
